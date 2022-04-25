@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: NeighborlyFunctApp
+spec:
+  selector:
+    matchLabels:
+      app: NeighborlyFunctApp
+  template:
+    metadata:
+      labels:
+        app: NeighborlyFunctApp
+    spec:
+      containers:
+      - name: NeighborlyFunctApp
+        image: neighborsimage1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080

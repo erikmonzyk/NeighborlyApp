@@ -1,0 +1,23 @@
+Neighborly
+
+Resource Group - Neighborly
+Storage Account - neighborlystorage_1649686751717
+Function App - NeighborlyFunctionApp
+Cosmos DB - cosmosdbforfunctionapp
+	url - 
+https://cosmosdbforfunctionapp.mongo.cosmos.azure.com:443/
+	Connection String - mongodb://cosmosdbforfunctionapp:mfXB7AYSLHMtKLbFKT0sYWB6TqGTmZxM10hawNez6UtSYmmP0F4WxzP4iaj5uWYK6POW6km48KAoqmfTvQywYA==@cosmosdbforfunctionapp.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cosmosdbforfunctionapp@
+
+MongoDBInstall Data Directory - C:\Program Files\MongoDB\Server\5.0\data\
+mongodb://localhost:27017
+
+
+
+mongoimport 
+-uri mongodb://cosmosdbforfunctionapp:mfXB7AYSLHMtKLbFKT0sYWB6TqGTmZxM10hawNez6UtSYmmP0F4WxzP4iaj5uWYK6POW6km48KAoqmfTvQywYA==@cosmosdbforfunctionapp.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cosmosdbforfunctionapp@  --db AdsPosts --collection 'Advertisements' --file='C:\Udacity\nd081-c2-Building-and-deploying-cloud-native-applications-from-scratch-project-starter\sample_data\sampleAds.json' --jsonArray
+# Repeat for the `posts` collection
+
+C:\Udacity\nd081-c2-Building-and-deploying-cloud-native-applications-from-scratch-project-starter\NeighborlyAPI
+
+
+C:\Udacity\nd081-c2-Building-and-deploying-cloud-native-applications-from-scratch-project-starter\.venv\Scripts\pip3.7.exe
